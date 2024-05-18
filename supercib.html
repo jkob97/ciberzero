@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberataque Simulado</title>
+    <link rel="stylesheet" href="./Ciberataque Simulado_files/styles.css">
+    <style>
+        /* Estilos CSS aquí */
+        @keyframes flash {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        body {
+            animation: none; /* Quita la animación del cuerpo */
+        }
+
+        #code > div {
+            animation: flash 2s infinite alternate; /* Ajusta la animación para que no parpadee */
+        }
+    </style>
+</head>
+<body>
+    <div id="code">
+        <div>Initializing remote connection...</div>
+        <div>Establishing secure channel...</div>
+        <div>Decrypting data...</div>
+        <div>Injecting malicious payload...</div>
+        <div>Upload complete.</div>
+    </div>
+    <div id="extraction" style="display: none;">
+        EXTRACCIÓN DE DATOS
+        <div class="progress-bar">
+            <div class="progress-bar-inner" style="width: 100%;"></div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div id="malware" style="display: block;">INJECTING MALWARE</div>
+    <script src="./Ciberataque Simulado_files/script.js.descarga"></script>
+    <!-- Code injected by live-server -->
+    <script>
+        // JavaScript aquí
+    </script>
+</body>
+</html>
